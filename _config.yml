@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "iOS, DPC, 布白, Hexo, NexT"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -14,7 +14,7 @@ keywords: "Hexo, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2015
 
 # Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
 # See: https://support.google.com/webmasters/answer/139066
@@ -29,10 +29,10 @@ canonical: true
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
+  categories: /categories
   #about: /about
-  archives: /archives
   tags: /tags
+  archives: /archives
   #commonweal: /404.html
 
 
@@ -59,9 +59,56 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
+
+
+# ---------------------------------------------------------------
+# Font Settings
+# - Find fonts on Google Fonts (https://www.google.com/fonts)
+# - All fonts set here will have the following styles:
+#     light, light italic, normal, normal intalic, bold, bold italic
+# - Be aware that setting too much fonts will cause site running slowly
+# - Introduce in 5.0.1
+# ---------------------------------------------------------------
+font:
+  enable: true
+
+  # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
+  host:
+
+  # Global font settings used on <body> element.
+  global:
+    # external: true will load this font family from host.
+    external: true
+    family: Lato
+
+  # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
+  # Fallback to `global` font settings.
+  headings:
+    external: true
+    family:
+
+  # Font settings for posts
+  # Fallback to `global` font settings.
+  posts:
+    external: true
+    family:
+
+  # Font settings for Logo
+  # Fallback to `global` font settings.
+  # The `size` option use `px` as unit
+  logo:
+    external: true
+    family:
+    size:
+
+  # Font settings for <code> and code blocks.
+  codes:
+    external: true
+    family:
+
 
 
 # ---------------------------------------------------------------
@@ -117,11 +164,12 @@ font:
 # ---------------------------------------------------------------
 
 
-# Social Links
-# Key is the link label showing to end users.
-# Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+# Social links
+social:
+  GitHub: https://github.com/dpc11
+  Weibo: http://weibo.com/dpchjq
+  豆瓣: http://www.douban.com/people/dpc11
+  B站: http://space.bilibili.com/3456553/#!/index
 
 
 # Social Links Icons
@@ -139,9 +187,7 @@ social_icons:
 
 
 # Sidebar Avatar
-# in theme directory(source/images): /images/avatar.jpg
-# in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /images/avatar.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -201,7 +247,8 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
+
 
 
 # Automatically scroll page to section which is under <!-- more --> mark.
@@ -212,7 +259,7 @@ scroll_to_more: true
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
   enable: false
-  length: 150
+  length: 300
 
 
 # Wechat Subscriber
